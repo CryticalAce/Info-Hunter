@@ -21,12 +21,7 @@ pages = My_table.findAll('a')
 
 for page in pages:
     wikipages.append(page.get('title'))
-
 #============================================================================================#
-
-#Want to use a Similarity Metric and get a score of .5 or above to match
-
-#        page = page.replace('To', 'to').replace('Of', 'of').replace('44', '.44').replace('Magnus', '.44 Magnus').replace('Smg', 'SMG').replace('M46', 'M/46').replace('Kpist', '"Kpist"').replace('Shotgun', 'Pump Action').replace('Automatgevar', 'Automatgevär').replace('Moller', 'Möller').replace('Pp', 'PP').replace('Mixtapes', 'Collectables/Mixtapes').replace('Gnome', 'Gnomes').replace('Gnomes', 'Collectables/Gnomes').replace('Collectables/Gnomess', 'Collectables/Gnomes').replace('Dalahast', 'Dalahäst').replace('Dalahäst', 'Collectables/Dalahäst')
 
 def matcher(inp):
     global wikipages
