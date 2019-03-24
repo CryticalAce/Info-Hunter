@@ -1,1 +1,1 @@
-# InfoHunterBot
+# Info Hunter Discord Bot
