@@ -34,7 +34,7 @@ def matcher(inp):
         elif ratio >=0.51:
             matches.append(page)
 
-class Main(commands.Cog):
+class Links(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
@@ -57,6 +57,19 @@ class Main(commands.Cog):
                     page = "Collectables/{0}".format(page)
                 await ctx.send(f"https://generation-zero.fandom.com/wiki/{page}")
 
+            elif len(matches) >= 2:
+                await ctx.send('There are multiple pages matching your search!')
+
+                num = 0
+
+                for page in matches:
+                    page = matches[num]
+                    page = page.replace(" ", "_")
+
+                    await ctx.send(f'https://generation-zero.fandom.com/wiki/{page}')
+
+                    num += 1
+
             elif len(matches) == 0:
                 await ctx.send('The page you are seeking could not be found, please check your spelling and try again')
 
@@ -65,4 +78,4 @@ class Main(commands.Cog):
 
 
 def setup(bot):
-    bot.add_cog(Main(bot))
+    bot.add_cog(Links(bot))
