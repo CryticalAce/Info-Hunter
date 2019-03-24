@@ -14,7 +14,7 @@ class BugReports(commands.Cog):
 
         gzcolour = discord.Colour.from_rgb(48,59,60)
 
-        bugreporttemplate = "\n\n **Brief description:** \n\n**Steps To Reproduce:** \n\n**Images / Videos:** \n\n**Host or Client:** \n\n**Players in your game:** \n\n**Hardware specifications:** "
+        bugreporttemplate = "**Brief description:** \n\n**Steps To Reproduce:** \n\n**Images / Videos:** \n\n**Host or Client:** \n\n**Players in your game:** \n\n**Hardware specifications:** "
 
         embed = discord.Embed(description = bugreporttemplate, colour=discord.Colour.from_rgb(28, 87, 88))
         await ctx.send(embed=embed)
