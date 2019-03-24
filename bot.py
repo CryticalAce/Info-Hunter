@@ -10,7 +10,7 @@ bot = commands.Bot(command_prefix='.',
 )
 
 #cogs to load on the initial load of the bot
-extensions = ['cogs.main','cogs.wiki', 'cogs.fun']
+extensions = ['cogs.main','cogs.wiki', 'cogs.fun', 'cogs.bugreports']
 
 if __name__ == '__main__':
     for extension in extensions:
