@@ -66,7 +66,7 @@ class Links(commands.Cog):
                     page = matches[num]
                     page = page.replace(" ", "_")
 
-                    await ctx.send(f'https://generation-zero.fandom.com/wiki/{page}')
+                    await ctx.send(f'<https://generation-zero.fandom.com/wiki/{page}>')
 
                     num += 1
 
