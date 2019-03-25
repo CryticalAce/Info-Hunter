@@ -6,7 +6,7 @@ class FAQ(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
-        #Listen to and respond to commands
+        #Listen to and respond to questions
 
 def setup(bot):
     bot.add_cog(FAQ(bot))

@@ -76,25 +76,25 @@ class Links(commands.Cog):
             matches.clear()
 
             #Add social link commands (Twitter, Facebook, Twitch, YouTube)
-            @commands.command(aliases=['yt'])
-            async def youtube(self, ctx):
-                await ctx.send('https://youtube.com/GenerationZeroGame')
+    @commands.command(aliases=['yt'])
+    async def youtube(self, ctx):
+        await ctx.send('https://youtube.com/GenerationZeroGame')
 
-            @commands.command(aliases=['fb'])
-            async def facebook(self, ctx):
-                await ctx.send('https://facebook.com/GenerationZeroGame')
+    @commands.command(aliases=['fb'])
+    async def facebook(self, ctx):
+        await ctx.send('https://facebook.com/GenerationZeroGame')
 
-            @commands.command()
-            async def twitch(self, ctx):
-                await ctx.send('https://twitch.tv/GenerationZeroGame')
+    @commands.command()
+    async def twitch(self, ctx):
+        await ctx.send('https://twitch.tv/GenerationZeroGame')
 
-            @commands.command()
-            async def twitter(self, ctx):
-                await ctx.send('https://twitter.com/GenerationZeroGame')
+    @commands.command()
+    async def twitter(self, ctx):
+        await ctx.send('https://twitter.com/GenerationZeroGame')
 
-            @commands.command()
-            async def forums(self, ctx):
-                await ctx.send('https://forum.generationzero.com')
+    @commands.command()
+    async def forums(self, ctx):
+        await ctx.send('https://forum.generationzero.com')
 
 
 
