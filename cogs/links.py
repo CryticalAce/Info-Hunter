@@ -55,10 +55,18 @@ class Main(commands.Cog):
 
                 if page == "Dalahäst" or "Gnomes" or "Mixtapes":
                     page = "Collectables/{0}".format(page)
+
                 await ctx.send(f"https://generation-zero.fandom.com/wiki/{page}")
 
+            if len(matches) >= 1:
+                await ctx.send('I have found multiple matches, here are the pages you might be seeking!')
+
+                for page in matches:
+                    page = page.replace(" ", "_")
+                    await ctx.send(f"<https://generation-zero.fandom.com/wiki/{page}>")
+
             elif len(matches) == 0:
-                await ctx.send('The page you are seeking could not be found, please check your spelling and try again')
+                    await ctx.send('The page you are seeking could not be found, please check your spelling and try again')
 
             matches.clear()
 
